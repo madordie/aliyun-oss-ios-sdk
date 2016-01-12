@@ -1,0 +1,2138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OSSClient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2.1 (build 1334)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOSSiOS </a></h1>
+				<a id="developerHome" href="../index.html">aliyun</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OSSClient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/clientConfiguration">&nbsp;&nbsp;&nbsp;&nbsp;clientConfiguration</option>
+	
+	<option value="//api/name/credentialProvider">&nbsp;&nbsp;&nbsp;&nbsp;credentialProvider</option>
+	
+	<option value="//api/name/endpoint">&nbsp;&nbsp;&nbsp;&nbsp;endpoint</option>
+	
+	<option value="//api/name/networking">&nbsp;&nbsp;&nbsp;&nbsp;networking</option>
+	
+	<option value="//api/name/ossOperationExecutor">&nbsp;&nbsp;&nbsp;&nbsp;ossOperationExecutor</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/abortMultipartUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- abortMultipartUpload:</option>
+	
+	<option value="//api/name/appendObject:">&nbsp;&nbsp;&nbsp;&nbsp;- appendObject:</option>
+	
+	<option value="//api/name/completeMultipartUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- completeMultipartUpload:</option>
+	
+	<option value="//api/name/copyObject:">&nbsp;&nbsp;&nbsp;&nbsp;- copyObject:</option>
+	
+	<option value="//api/name/createBucket:">&nbsp;&nbsp;&nbsp;&nbsp;- createBucket:</option>
+	
+	<option value="//api/name/deleteBucket:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteBucket:</option>
+	
+	<option value="//api/name/deleteObject:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:</option>
+	
+	<option value="//api/name/deleteObjectInBucket:objectKey:onCompleted:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObjectInBucket:objectKey:onCompleted:</option>
+	
+	<option value="//api/name/doesObjectExistInBucket:objectKey:error:">&nbsp;&nbsp;&nbsp;&nbsp;- doesObjectExistInBucket:objectKey:error:</option>
+	
+	<option value="//api/name/downloadToDataFromBucket:objectKey:onCompleted:onProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadToDataFromBucket:objectKey:onCompleted:onProgress:</option>
+	
+	<option value="//api/name/downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:</option>
+	
+	<option value="//api/name/getBucket:">&nbsp;&nbsp;&nbsp;&nbsp;- getBucket:</option>
+	
+	<option value="//api/name/getBucketACL:">&nbsp;&nbsp;&nbsp;&nbsp;- getBucketACL:</option>
+	
+	<option value="//api/name/getObject:">&nbsp;&nbsp;&nbsp;&nbsp;- getObject:</option>
+	
+	<option value="//api/name/getService:">&nbsp;&nbsp;&nbsp;&nbsp;- getService:</option>
+	
+	<option value="//api/name/headObject:">&nbsp;&nbsp;&nbsp;&nbsp;- headObject:</option>
+	
+	<option value="//api/name/initWithEndpoint:credentialProvider:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithEndpoint:credentialProvider:</option>
+	
+	<option value="//api/name/initWithEndpoint:credentialProvider:clientConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithEndpoint:credentialProvider:clientConfiguration:</option>
+	
+	<option value="//api/name/listParts:">&nbsp;&nbsp;&nbsp;&nbsp;- listParts:</option>
+	
+	<option value="//api/name/multipartUploadInit:">&nbsp;&nbsp;&nbsp;&nbsp;- multipartUploadInit:</option>
+	
+	<option value="//api/name/presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:</option>
+	
+	<option value="//api/name/presignPublicURLWithBucketName:withObjectKey:">&nbsp;&nbsp;&nbsp;&nbsp;- presignPublicURLWithBucketName:withObjectKey:</option>
+	
+	<option value="//api/name/putObject:">&nbsp;&nbsp;&nbsp;&nbsp;- putObject:</option>
+	
+	<option value="//api/name/resumableUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- resumableUpload:</option>
+	
+	<option value="//api/name/resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</option>
+	
+	<option value="//api/name/setBackgroundSessionCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- setBackgroundSessionCompletionHandler:</option>
+	
+	<option value="//api/name/uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</option>
+	
+	<option value="//api/name/uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</option>
+	
+	<option value="//api/name/uploadPart:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadPart:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Compat Methods">Compat Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clientConfiguration">clientConfiguration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/credentialProvider">credentialProvider</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endpoint">endpoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networking">networking</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ossOperationExecutor">ossOperationExecutor</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/abortMultipartUpload:">abortMultipartUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendObject:">appendObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completeMultipartUpload:">completeMultipartUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyObject:">copyObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createBucket:">createBucket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteBucket:">deleteBucket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:">deleteObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObjectInBucket:objectKey:onCompleted:">deleteObjectInBucket:objectKey:onCompleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doesObjectExistInBucket:objectKey:error:">doesObjectExistInBucket:objectKey:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadToDataFromBucket:objectKey:onCompleted:onProgress:">downloadToDataFromBucket:objectKey:onCompleted:onProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:">downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getBucket:">getBucket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getBucketACL:">getBucketACL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObject:">getObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getService:">getService:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/headObject:">headObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithEndpoint:credentialProvider:">initWithEndpoint:credentialProvider:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithEndpoint:credentialProvider:clientConfiguration:">initWithEndpoint:credentialProvider:clientConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listParts:">listParts:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multipartUploadInit:">multipartUploadInit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:">presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presignPublicURLWithBucketName:withObjectKey:">presignPublicURLWithBucketName:withObjectKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putObject:">putObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumableUpload:">resumableUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBackgroundSessionCompletionHandler:">setBackgroundSessionCompletionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadPart:">uploadPart:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OSSClient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OSSClient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OSSClient.h<br />OSSClient.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>OSSClient是OSS服务的iOS客户端，它为调用者提供了一系列的方法，用于和OSS服务进行交互。
+一般来说，全局内只需要保持一个OSSClient，用来调用各种操作。</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endpoint">&nbsp;&nbsp;endpoint</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networking">&nbsp;&nbsp;networking</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/credentialProvider">&nbsp;&nbsp;credentialProvider</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clientConfiguration">&nbsp;&nbsp;clientConfiguration</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ossOperationExecutor">&nbsp;&nbsp;ossOperationExecutor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithEndpoint:credentialProvider:">&ndash;&nbsp;initWithEndpoint:credentialProvider:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithEndpoint:credentialProvider:clientConfiguration:">&ndash;&nbsp;initWithEndpoint:credentialProvider:clientConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBackgroundSessionCompletionHandler:">&ndash;&nbsp;setBackgroundSessionCompletionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getService:">&ndash;&nbsp;getService:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createBucket:">&ndash;&nbsp;createBucket:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteBucket:">&ndash;&nbsp;deleteBucket:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getBucket:">&ndash;&nbsp;getBucket:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getBucketACL:">&ndash;&nbsp;getBucketACL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/headObject:">&ndash;&nbsp;headObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObject:">&ndash;&nbsp;getObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putObject:">&ndash;&nbsp;putObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appendObject:">&ndash;&nbsp;appendObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyObject:">&ndash;&nbsp;copyObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:">&ndash;&nbsp;deleteObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multipartUploadInit:">&ndash;&nbsp;multipartUploadInit:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadPart:">&ndash;&nbsp;uploadPart:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completeMultipartUpload:">&ndash;&nbsp;completeMultipartUpload:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listParts:">&ndash;&nbsp;listParts:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/abortMultipartUpload:">&ndash;&nbsp;abortMultipartUpload:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:">&ndash;&nbsp;presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presignPublicURLWithBucketName:withObjectKey:">&ndash;&nbsp;presignPublicURLWithBucketName:withObjectKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumableUpload:">&ndash;&nbsp;resumableUpload:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doesObjectExistInBucket:objectKey:error:">&ndash;&nbsp;doesObjectExistInBucket:objectKey:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Compat Methods" name="task_Compat Methods"></a>
+						<h3 class="subsubtitle task-title">Compat Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&ndash;&nbsp;uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadToDataFromBucket:objectKey:onCompleted:onProgress:">&ndash;&nbsp;downloadToDataFromBucket:objectKey:onCompleted:onProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&ndash;&nbsp;uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:">&ndash;&nbsp;downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:">&ndash;&nbsp;resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObjectInBucket:objectKey:onCompleted:">&ndash;&nbsp;deleteObjectInBucket:objectKey:onCompleted:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clientConfiguration" title="clientConfiguration"></a>
+	<h3 class="subsubtitle method-title">clientConfiguration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>客户端设置</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) OSSClientConfiguration *clientConfiguration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>客户端设置</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/credentialProvider" title="credentialProvider"></a>
+	<h3 class="subsubtitle method-title">credentialProvider</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>提供访问所需凭证</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;OSSCredentialProvider&gt; credentialProvider</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>提供访问所需凭证</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endpoint" title="endpoint"></a>
+	<h3 class="subsubtitle method-title">endpoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>OSS访问域名</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *endpoint</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>OSS访问域名</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networking" title="networking"></a>
+	<h3 class="subsubtitle method-title">networking</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>用以收发网络请求</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) OSSNetworking *networking</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>用以收发网络请求</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ossOperationExecutor" title="ossOperationExecutor"></a>
+	<h3 class="subsubtitle method-title">ossOperationExecutor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>任务队列</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) OSSExecutor *ossOperationExecutor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>任务队列</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/abortMultipartUpload:" title="abortMultipartUpload:"></a>
+	<h3 class="subsubtitle method-title">abortMultipartUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：AbortMultipartUpload
+该接口可以根据用户提供的Upload ID中止其对应的Multipart Upload事件。
+当一个Multipart Upload事件被中止后，就不能再使用这个Upload ID做任何操作，已经上传的Part数据也会被删除。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)abortMultipartUpload:(OSSAbortMultipartUploadRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：AbortMultipartUpload
+该接口可以根据用户提供的Upload ID中止其对应的Multipart Upload事件。
+当一个Multipart Upload事件被中止后，就不能再使用这个Upload ID做任何操作，已经上传的Part数据也会被删除。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appendObject:" title="appendObject:"></a>
+	<h3 class="subsubtitle method-title">appendObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：AppendObject
+以追加写的方式上传文件。通过Append Object操作创建的Object类型为Appendable Object，而通过Put Object上传的Object是Normal Object。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)appendObject:(OSSAppendObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：AppendObject
+以追加写的方式上传文件。通过Append Object操作创建的Object类型为Appendable Object，而通过Put Object上传的Object是Normal Object。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completeMultipartUpload:" title="completeMultipartUpload:"></a>
+	<h3 class="subsubtitle method-title">completeMultipartUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：CompleteMultipartUpload
+在将所有数据Part都上传完成后，必须调用Complete Multipart Upload API来完成整个文件的Multipart Upload。
+在执行该操作时，用户必须提供所有有效的数据Part的列表（包括part号码和ETAG）；OSS收到用户提交的Part列表后，会逐一验证每个数据Part的有效性。
+当所有的数据Part验证通过后，OSS将把这些数据part组合成一个完整的Object。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)completeMultipartUpload:(OSSCompleteMultipartUploadRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：CompleteMultipartUpload
+在将所有数据Part都上传完成后，必须调用Complete Multipart Upload API来完成整个文件的Multipart Upload。
+在执行该操作时，用户必须提供所有有效的数据Part的列表（包括part号码和ETAG）；OSS收到用户提交的Part列表后，会逐一验证每个数据Part的有效性。
+当所有的数据Part验证通过后，OSS将把这些数据part组合成一个完整的Object。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyObject:" title="copyObject:"></a>
+	<h3 class="subsubtitle method-title">copyObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：copyObject
+拷贝一个在OSS上已经存在的object成另外一个object，可以发送一个PUT请求给OSS，并在PUT请求头中添加元素“x-oss-copy-source”来指定拷贝源。
+OSS会自动判断出这是一个Copy操作，并直接在服务器端执行该操作。如果拷贝成功，则返回新的object信息给用户。
+该操作适用于拷贝小于1GB的文件。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)copyObject:(OSSCopyObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：copyObject
+拷贝一个在OSS上已经存在的object成另外一个object，可以发送一个PUT请求给OSS，并在PUT请求头中添加元素“x-oss-copy-source”来指定拷贝源。
+OSS会自动判断出这是一个Copy操作，并直接在服务器端执行该操作。如果拷贝成功，则返回新的object信息给用户。
+该操作适用于拷贝小于1GB的文件。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createBucket:" title="createBucket:"></a>
+	<h3 class="subsubtitle method-title">createBucket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：PutBucket
+用于创建Bucket（不支持匿名访问）。默认情况下，创建的Bucket位于默认的数据中心：oss-cn-hangzhou。
+用户可以显式指定Bucket位于的数据中心，从而最优化延迟，最小化费用或者满足监管要求等。
+注意：
+1. 尚不支持STS。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)createBucket:(OSSCreateBucketRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：PutBucket
+用于创建Bucket（不支持匿名访问）。默认情况下，创建的Bucket位于默认的数据中心：oss-cn-hangzhou。
+用户可以显式指定Bucket位于的数据中心，从而最优化延迟，最小化费用或者满足监管要求等。
+注意：
+1. 尚不支持STS。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteBucket:" title="deleteBucket:"></a>
+	<h3 class="subsubtitle method-title">deleteBucket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：DeleteBucket
+用于删除某个Bucket。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)deleteBucket:(OSSDeleteBucketRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：DeleteBucket
+用于删除某个Bucket。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:" title="deleteObject:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：DeleteObject
+用于删除某个Object。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)deleteObject:(OSSDeleteObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：DeleteObject
+用于删除某个Object。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObjectInBucket:objectKey:onCompleted:" title="deleteObjectInBucket:objectKey:onCompleted:"></a>
+	<h3 class="subsubtitle method-title">deleteObjectInBucket:objectKey:onCompleted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的删除Object接口
+建议更换使用：deleteObject</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteObjectInBucket:(NSString *)<em>bucketName</em> objectKey:(NSString *)<em>objectKey</em> onCompleted:(void ( ^ ) ( BOOL , NSError *))<em>onCompleted</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的删除Object接口
+建议更换使用：deleteObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doesObjectExistInBucket:objectKey:error:" title="doesObjectExistInBucket:objectKey:error:"></a>
+	<h3 class="subsubtitle method-title">doesObjectExistInBucket:objectKey:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>查看某个Object是否存在
+@bucketName Object所在的Bucket名称
+@objectKey Object名称</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)doesObjectExistInBucket:(NSString *)<em>bucketName</em> objectKey:(NSString *)<em>objectKey</em> error:(const NSError **)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>查看某个Object是否存在
+@bucketName Object所在的Bucket名称
+@objectKey Object名称</p>
+
+<p>return YES                     Object存在
+return NO &amp;&amp; <em>error = nil      Object不存在
+return NO &amp;&amp; </em>error != nil     发生错误</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadToDataFromBucket:objectKey:onCompleted:onProgress:" title="downloadToDataFromBucket:objectKey:onCompleted:onProgress:"></a>
+	<h3 class="subsubtitle method-title">downloadToDataFromBucket:objectKey:onCompleted:onProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的下载数据接口
+建议更换使用：getObject</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTaskHandler *)downloadToDataFromBucket:(NSString *)<em>bucketName</em> objectKey:(NSString *)<em>objectKey</em> onCompleted:(void ( ^ ) ( NSData *, NSError *))<em>onCompleted</em> onProgress:(void ( ^ ) ( float progress ))<em>onProgress</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的下载数据接口
+建议更换使用：getObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:" title="downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:"></a>
+	<h3 class="subsubtitle method-title">downloadToFileFromBucket:objectKey:toFile:onCompleted:onProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的下载文件接口
+建议更换使用：getObject</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTaskHandler *)downloadToFileFromBucket:(NSString *)<em>bucketName</em> objectKey:(NSString *)<em>objectKey</em> toFile:(NSString *)<em>filePath</em> onCompleted:(void ( ^ ) ( BOOL , NSError *))<em>onCompleted</em> onProgress:(void ( ^ ) ( float progress ))<em>onProgress</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的下载文件接口
+建议更换使用：getObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getBucket:" title="getBucket:"></a>
+	<h3 class="subsubtitle method-title">getBucket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：GetBucket
+用来list Bucket中所有Object的信息，可以通过prefix，marker，delimiter和max-keys对list做限定，返回部分结果。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)getBucket:(OSSGetBucketRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：GetBucket
+用来list Bucket中所有Object的信息，可以通过prefix，marker，delimiter和max-keys对list做限定，返回部分结果。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getBucketACL:" title="getBucketACL:"></a>
+	<h3 class="subsubtitle method-title">getBucketACL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：GetBucketACL
+用来获取某个Bucket的访问权限。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)getBucketACL:(OSSGetBucketACLRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：GetBucketACL
+用来获取某个Bucket的访问权限。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObject:" title="getObject:"></a>
+	<h3 class="subsubtitle method-title">getObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：GetObject
+用于获取某个Object，此操作要求用户对该Object有读权限。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)getObject:(OSSGetObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：GetObject
+用于获取某个Object，此操作要求用户对该Object有读权限。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getService:" title="getService:"></a>
+	<h3 class="subsubtitle method-title">getService:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：GetService
+获取请求者当前拥有的全部Bucket。
+注意：
+1. 尚不支持STS;
+2. 当所有的bucket都返回时，返回的xml中不包含Prefix、Marker、MaxKeys、IsTruncated、NextMarker节点，如果还有部分结果未返回，则增加上述节点，其中NextMarker用于继续查询时给marker赋值。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)getService:(OSSGetServiceRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：GetService
+获取请求者当前拥有的全部Bucket。
+注意：
+1. 尚不支持STS;
+2. 当所有的bucket都返回时，返回的xml中不包含Prefix、Marker、MaxKeys、IsTruncated、NextMarker节点，如果还有部分结果未返回，则增加上述节点，其中NextMarker用于继续查询时给marker赋值。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/headObject:" title="headObject:"></a>
+	<h3 class="subsubtitle method-title">headObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：HeadObject
+只返回某个Object的meta信息，不返回文件内容。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)headObject:(OSSHeadObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：HeadObject
+只返回某个Object的meta信息，不返回文件内容。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithEndpoint:credentialProvider:" title="initWithEndpoint:credentialProvider:"></a>
+	<h3 class="subsubtitle method-title">initWithEndpoint:credentialProvider:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初始化OSSClient，使用默认的本地设置
+@<a href="#//api/name/endpoint">endpoint</a> 指明Bucket所在的Region域名
+@<a href="#//api/name/credentialProvider">credentialProvider</a> 需要实现的签名器</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithEndpoint:(NSString *)<em>endpoint</em> credentialProvider:(id&lt;OSSCredentialProvider&gt;)<em>credentialProvider</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初始化OSSClient，使用默认的本地设置
+@<a href="#//api/name/endpoint">endpoint</a> 指明Bucket所在的Region域名
+@<a href="#//api/name/credentialProvider">credentialProvider</a> 需要实现的签名器</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithEndpoint:credentialProvider:clientConfiguration:" title="initWithEndpoint:credentialProvider:clientConfiguration:"></a>
+	<h3 class="subsubtitle method-title">initWithEndpoint:credentialProvider:clientConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初始化OSSClient，使用自定义设置
+@<a href="#//api/name/endpoint">endpoint</a> 指明Bucket所在的Region域名
+@<a href="#//api/name/credentialProvider">credentialProvider</a> 需要实现的签名器
+@conf 可以设置一些本地参数如重试次数、超时时间等</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithEndpoint:(NSString *)<em>endpoint</em> credentialProvider:(id&lt;OSSCredentialProvider&gt;)<em>credentialProvider</em> clientConfiguration:(OSSClientConfiguration *)<em>conf</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初始化OSSClient，使用自定义设置
+@<a href="#//api/name/endpoint">endpoint</a> 指明Bucket所在的Region域名
+@<a href="#//api/name/credentialProvider">credentialProvider</a> 需要实现的签名器
+@conf 可以设置一些本地参数如重试次数、超时时间等</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listParts:" title="listParts:"></a>
+	<h3 class="subsubtitle method-title">listParts:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：ListParts
+可以罗列出指定Upload ID所属的所有已经上传成功Part。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)listParts:(OSSListPartsRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：ListParts
+可以罗列出指定Upload ID所属的所有已经上传成功Part。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multipartUploadInit:" title="multipartUploadInit:"></a>
+	<h3 class="subsubtitle method-title">multipartUploadInit:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：InitiateMultipartUpload
+使用Multipart Upload模式传输数据前，必须先调用该接口来通知OSS初始化一个Multipart Upload事件。该接口会返回一个OSS服务器创建的全局唯一的Upload ID，用于标识本次Multipart Upload事件。
+用户可以根据这个ID来发起相关的操作，如中止Multipart Upload、查询Multipart Upload等。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)multipartUploadInit:(OSSInitMultipartUploadRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：InitiateMultipartUpload
+使用Multipart Upload模式传输数据前，必须先调用该接口来通知OSS初始化一个Multipart Upload事件。该接口会返回一个OSS服务器创建的全局唯一的Upload ID，用于标识本次Multipart Upload事件。
+用户可以根据这个ID来发起相关的操作，如中止Multipart Upload、查询Multipart Upload等。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:" title="presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:"></a>
+	<h3 class="subsubtitle method-title">presignConstrainURLWithBucketName:withObjectKey:withExpirationInterval:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对一个Object签名出一个URL，可以把该URL转给第三方实现授权访问。
+@bucketName Object所在的Bucket名称
+@objectKey Object名称
+@interval 签名URL时，可以指定这个URL的有效时长是多久，单位是秒，比如说需要有效时长为1小时的URL，这里传入3600</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)presignConstrainURLWithBucketName:(NSString *)<em>bucketName</em> withObjectKey:(NSString *)<em>objectKey</em> withExpirationInterval:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对一个Object签名出一个URL，可以把该URL转给第三方实现授权访问。
+@bucketName Object所在的Bucket名称
+@objectKey Object名称
+@interval 签名URL时，可以指定这个URL的有效时长是多久，单位是秒，比如说需要有效时长为1小时的URL，这里传入3600</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presignPublicURLWithBucketName:withObjectKey:" title="presignPublicURLWithBucketName:withObjectKey:"></a>
+	<h3 class="subsubtitle method-title">presignPublicURLWithBucketName:withObjectKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>如果Object的权限是公共读或者公共读写，调用这个接口对该Object签名出一个URL，可以把该URL转给第三方实现授权访问。
+@bucketName Object所在的Bucket名称
+@objectKey Object名称</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)presignPublicURLWithBucketName:(NSString *)<em>bucketName</em> withObjectKey:(NSString *)<em>objectKey</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>如果Object的权限是公共读或者公共读写，调用这个接口对该Object签名出一个URL，可以把该URL转给第三方实现授权访问。
+@bucketName Object所在的Bucket名称
+@objectKey Object名称</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putObject:" title="putObject:"></a>
+	<h3 class="subsubtitle method-title">putObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：PutObject
+用于上传文件。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)putObject:(OSSPutObjectRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：PutObject
+用于上传文件。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumableUpload:" title="resumableUpload:"></a>
+	<h3 class="subsubtitle method-title">resumableUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>断点上传接口
+这个接口封装了分块上传的若干接口以实现断点上传，但是需要用户自行保存UploadId。
+对一个新文件，用户需要首先调用multipartUploadInit接口获得一个UploadId，然后调用此接口上传这个文件。
+如果上传失败，首先需要检查一下失败原因：
+     如果不是不可恢复的失败，那么可以用同一个UploadId和同一文件继续调用这个接口续传
+     否则，需要重新获取UploadId，重新上传这个文件。
+详细参考demo。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)resumableUpload:(OSSResumableUploadRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>断点上传接口
+这个接口封装了分块上传的若干接口以实现断点上传，但是需要用户自行保存UploadId。
+对一个新文件，用户需要首先调用multipartUploadInit接口获得一个UploadId，然后调用此接口上传这个文件。
+如果上传失败，首先需要检查一下失败原因：
+     如果不是不可恢复的失败，那么可以用同一个UploadId和同一文件继续调用这个接口续传
+     否则，需要重新获取UploadId，重新上传这个文件。
+详细参考demo。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:" title="resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:"></a>
+	<h3 class="subsubtitle method-title">resumableUploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的断点上传文件接口
+建议更换使用：resumableUpload</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTaskHandler *)resumableUploadFile:(NSString *)<em>filePath</em> withContentType:(NSString *)<em>contentType</em> withObjectMeta:(NSDictionary *)<em>meta</em> toBucketName:(NSString *)<em>bucketName</em> toObjectKey:(NSString *)<em>objectKey</em> onCompleted:(void ( ^ ) ( BOOL , NSError *))<em>onCompleted</em> onProgress:(void ( ^ ) ( float progress ))<em>onProgress</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的断点上传文件接口
+建议更换使用：resumableUpload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBackgroundSessionCompletionHandler:" title="setBackgroundSessionCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">setBackgroundSessionCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>设置后台任务完成回调(仅在开启了后台上传任务的时候有效)
+这个回调会在后台传输任务完成时被回调</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBackgroundSessionCompletionHandler:(void ( ^ ) ( ))<em>completeHandler</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>设置后台任务完成回调(仅在开启了后台上传任务的时候有效)
+这个回调会在后台传输任务完成时被回调</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:" title="uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:"></a>
+	<h3 class="subsubtitle method-title">uploadData:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的上传数据接口
+建议更换使用：putObject</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTaskHandler *)uploadData:(NSData *)<em>data</em> withContentType:(NSString *)<em>contentType</em> withObjectMeta:(NSDictionary *)<em>meta</em> toBucketName:(NSString *)<em>bucketName</em> toObjectKey:(NSString *)<em>objectKey</em> onCompleted:(void ( ^ ) ( BOOL , NSError *))<em>onCompleted</em> onProgress:(void ( ^ ) ( float progress ))<em>onProgress</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的上传数据接口
+建议更换使用：putObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:" title="uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:"></a>
+	<h3 class="subsubtitle method-title">uploadFile:withContentType:withObjectMeta:toBucketName:toObjectKey:onCompleted:onProgress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>兼容老版本用法的上传文件接口
+建议更换使用：putObject</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTaskHandler *)uploadFile:(NSString *)<em>filePath</em> withContentType:(NSString *)<em>contentType</em> withObjectMeta:(NSDictionary *)<em>meta</em> toBucketName:(NSString *)<em>bucketName</em> toObjectKey:(NSString *)<em>objectKey</em> onCompleted:(void ( ^ ) ( BOOL , NSError *))<em>onCompleted</em> onProgress:(void ( ^ ) ( float progress ))<em>onProgress</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>兼容老版本用法的上传文件接口
+建议更换使用：putObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSCompat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadPart:" title="uploadPart:"></a>
+	<h3 class="subsubtitle method-title">uploadPart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>对应RESTFul API：UploadPart
+初始化一个Multipart Upload之后，可以根据指定的Object名和Upload ID来分块（Part）上传数据。
+每一个上传的Part都有一个标识它的号码（part number，范围是1~10,000）。
+对于同一个Upload ID，该号码不但唯一标识这一块数据，也标识了这块数据在整个文件内的相对位置。
+如果你用同一个part号码，上传了新的数据，那么OSS上已有的这个号码的Part数据将被覆盖。除了最后一块Part以外，其他的part最小为100KB；
+最后一块Part没有大小限制。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)uploadPart:(OSSUploadPartRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>对应RESTFul API：UploadPart
+初始化一个Multipart Upload之后，可以根据指定的Object名和Upload ID来分块（Part）上传数据。
+每一个上传的Part都有一个标识它的号码（part number，范围是1~10,000）。
+对于同一个Upload ID，该号码不但唯一标识这一块数据，也标识了这块数据在整个文件内的相对位置。
+如果你用同一个part号码，上传了新的数据，那么OSS上已有的这个号码的Part数据将被覆盖。除了最后一块Part以外，其他的part最小为100KB；
+最后一块Part没有大小限制。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 aliyun. All rights reserved. (Last updated: 2016-01-12)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
