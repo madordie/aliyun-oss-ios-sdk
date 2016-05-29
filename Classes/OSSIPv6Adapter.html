@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>OSSCreateBucketRequest Class Reference</title>
+		<title>OSSIPv6Adapter Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">OSSCreateBucketRequest Class Reference</h1>
+				<h1 class="hideInXcode">OSSIPv6Adapter Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,8 +25,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -37,17 +35,23 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/bucketName">&nbsp;&nbsp;&nbsp;&nbsp;bucketName</option>
-	
-	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
-	
-	<option value="//api/name/xOssACL">&nbsp;&nbsp;&nbsp;&nbsp;xOssACL</option>
 	
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getDNSServersIpStack">&nbsp;&nbsp;&nbsp;&nbsp;- getDNSServersIpStack</option>
+	
+	<option value="//api/name/handleIpv4Address:">&nbsp;&nbsp;&nbsp;&nbsp;- handleIpv4Address:</option>
+	
+	<option value="//api/name/isIPv4Address:">&nbsp;&nbsp;&nbsp;&nbsp;- isIPv4Address:</option>
+	
+	<option value="//api/name/isIPv6Address:">&nbsp;&nbsp;&nbsp;&nbsp;- isIPv6Address:</option>
+	
+	<option value="//api/name/isIPv6OnlyNetwork">&nbsp;&nbsp;&nbsp;&nbsp;- isIPv6OnlyNetwork</option>
+	
+	<option value="//api/name/reResolveIPv6OnlyStatus">&nbsp;&nbsp;&nbsp;&nbsp;- reResolveIPv6OnlyStatus</option>
 	
 	
 	
@@ -58,8 +62,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -71,26 +73,32 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bucketName">bucketName</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDNSServersIpStack">getDNSServersIpStack</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleIpv4Address:">handleIpv4Address:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xOssACL">xOssACL</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isIPv4Address:">isIPv4Address:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isIPv6Address:">isIPv6Address:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isIPv6OnlyNetwork">isIPv6OnlyNetwork</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reResolveIPv6OnlyStatus">reResolveIPv6OnlyStatus</a></span></li>
 	
 </ul></li>
-
-
-
-
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="OSSCreateBucketRequest Class Reference" name="top"></a>
+				<a title="OSSIPv6Adapter Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -99,7 +107,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">OSSCreateBucketRequest Class Reference</h1>
+						<h1 class="title title-header">OSSIPv6Adapter Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -107,23 +115,15 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/OSSRequest.html">OSSRequest</a> : NSObject</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OSSModel.h<br />OSSModel.m</td>
+	<td class="specification-value">OSSIPv6Adapter.h<br />OSSIPv6Adapter.m</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>创建Bucket的请求</p>
-					</div>
-					
-					
 					
 					
 					
@@ -133,26 +133,52 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/bucketName">&nbsp;&nbsp;bucketName</a></code>
+		<code><a href="#//api/name/isIPv6OnlyNetwork">&ndash;&nbsp;isIPv6OnlyNetwork</a></code>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+		<code><a href="#//api/name/reResolveIPv6OnlyStatus">&ndash;&nbsp;reResolveIPv6OnlyStatus</a></code>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/xOssACL">&nbsp;&nbsp;xOssACL</a></code>
+		<code><a href="#//api/name/handleIpv4Address:">&ndash;&nbsp;handleIpv4Address:</a></code>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isIPv4Address:">&ndash;&nbsp;isIPv4Address:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isIPv6Address:">&ndash;&nbsp;isIPv6Address:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDNSServersIpStack">&ndash;&nbsp;getDNSServersIpStack</a></code>
+	</span>
+	
 	
 </li>
 						</ul>
@@ -163,23 +189,30 @@
 					
 					
 					
+					
+					
+					
+					
 					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/bucketName" title="bucketName"></a>
-	<h3 class="subsubtitle method-title">bucketName</h3>
+	<a name="//api/name/getDNSServersIpStack" title="getDNSServersIpStack"></a>
+	<h3 class="subsubtitle method-title">getDNSServersIpStack</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>要创建的Bucket的名称</p>
+		<p>查询本机DNS Servers协议</p>
+
+<pre><code>@return
+</code></pre>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *bucketName</code></div>
+	<div class="method-subsection method-declaration"><code>- (int)getDNSServersIpStack</code></div>
 
     
 	
@@ -188,11 +221,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>要创建的Bucket的名称</p>
-	</div>
 	
 	
 	
@@ -202,26 +230,34 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OSSModel.h</code><br />
+		<code class="declared-in-ref">OSSIPv6Adapter.m</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/location" title="location"></a>
-	<h3 class="subsubtitle method-title">location</h3>
+	<a name="//api/name/handleIpv4Address:" title="handleIpv4Address:"></a>
+	<h3 class="subsubtitle method-title">handleIpv4Address:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>指定Bucket所在的数据中心。
-关于数据中心和终端域名的更多内容，参见访问域名和数据中心<a><a href="https://docs.aliyun.com/">https://docs.aliyun.com/</a>#/pub/oss/product-documentation/domain-region</a></p>
+		<ul>
+<li>@brief  自动完成对IPv4地址的适配</li>
+<li><pre><code>   IPv6-Only网络环境：IPv4 address -&gt; IPv4 Embedded IPv6 address
+    例：42.156.220.114 -&gt; 64:ff9b::2a9c:dc72
+</code></pre></li>
+<li>@param  addr
+*</li>
+<li>@return</li>
+</ul>
+
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *location</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)handleIpv4Address:(NSString *)<em>addr</em></code></div>
 
     
 	
@@ -233,8 +269,16 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>指定Bucket所在的数据中心。
-关于数据中心和终端域名的更多内容，参见访问域名和数据中心<a><a href="https://docs.aliyun.com/">https://docs.aliyun.com/</a>#/pub/oss/product-documentation/domain-region</a></p>
+		<ul>
+<li>@brief  自动完成对IPv4地址的适配</li>
+<li><pre><code>   IPv6-Only网络环境：IPv4 address -&gt; IPv4 Embedded IPv6 address
+    例：42.156.220.114 -&gt; 64:ff9b::2a9c:dc72
+</code></pre></li>
+<li>@param  addr
+*</li>
+<li>@return</li>
+</ul>
+
 	</div>
 	
 	
@@ -245,25 +289,28 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OSSModel.h</code><br />
+		<code class="declared-in-ref">OSSIPv6Adapter.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/xOssACL" title="xOssACL"></a>
-	<h3 class="subsubtitle method-title">xOssACL</h3>
+	<a name="//api/name/isIPv4Address:" title="isIPv4Address:"></a>
+	<h3 class="subsubtitle method-title">isIPv4Address:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>设置Bucket 访问权限。目前Bucket有三种访问权限：public-read-write，public-read和private。</p>
+		<p>判断是否为IPv4地址</p>
+
+<pre><code>@return
+</code></pre>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *xOssACL</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)isIPv4Address:(NSString *)<em>addr</em></code></div>
 
     
 	
@@ -272,11 +319,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>设置Bucket 访问权限。目前Bucket有三种访问权限：public-read-write，public-read和private。</p>
-	</div>
 	
 	
 	
@@ -286,17 +328,130 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OSSModel.h</code><br />
+		<code class="declared-in-ref">OSSIPv6Adapter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isIPv6Address:" title="isIPv6Address:"></a>
+	<h3 class="subsubtitle method-title">isIPv6Address:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>判断是否为IPv6地址</p>
+
+<pre><code>@return
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isIPv6Address:(NSString *)<em>addr</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSIPv6Adapter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isIPv6OnlyNetwork" title="isIPv6OnlyNetwork"></a>
+	<h3 class="subsubtitle method-title">isIPv6OnlyNetwork</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>判断当前是否为IPv6-Only网络</p>
+
+<pre><code>@return
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isIPv6OnlyNetwork</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSIPv6Adapter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reResolveIPv6OnlyStatus" title="reResolveIPv6OnlyStatus"></a>
+	<h3 class="subsubtitle method-title">reResolveIPv6OnlyStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>手动刷新IPv6-Only网络的判定</p>
+
+<pre><code>@return
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)reResolveIPv6OnlyStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSIPv6Adapter.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
-					
-					
-					
-					
 					
 					
                     

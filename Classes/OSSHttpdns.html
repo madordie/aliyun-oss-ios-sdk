@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>OSSBolts Class Reference</title>
+		<title>OSSHttpdns Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">OSSBolts Class Reference</h1>
+				<h1 class="hideInXcode">OSSHttpdns Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,8 +25,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -39,11 +37,13 @@
 	
 	
 	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/version">&nbsp;&nbsp;&nbsp;&nbsp;+ version</option>
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/asynGetIpByHost:">&nbsp;&nbsp;&nbsp;&nbsp;- asynGetIpByHost:</option>
+	
+	<option value="//api/name/resolveHost:">&nbsp;&nbsp;&nbsp;&nbsp;- resolveHost:</option>
 	
 	
 	
@@ -54,8 +54,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -69,20 +67,22 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/version">version</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asynGetIpByHost:">asynGetIpByHost:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resolveHost:">resolveHost:</a></span></li>
 	
 </ul></li>
-
-
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="OSSBolts Class Reference" name="top"></a>
+				<a title="OSSHttpdns Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -91,7 +91,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">OSSBolts Class Reference</h1>
+						<h1 class="title title-header">OSSHttpdns Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -102,14 +102,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OSSBolts.h<br />OSSBolts.m</td>
+	<td class="specification-value">OSSHttpdns.h<br />OSSHttpdns.m</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
-					
-					
 					
 					
 					
@@ -119,12 +117,26 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/version">+&nbsp;version</a></code>
+		<code><a href="#//api/name/asynGetIpByHost:">&ndash;&nbsp;asynGetIpByHost:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resolveHost:">&ndash;&nbsp;resolveHost:</a></code>
 	</span>
 	
 	
@@ -139,31 +151,43 @@
 					
 					
 					
+					
+					
 					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/version" title="version"></a>
-	<h3 class="subsubtitle method-title">version</h3>
+	<a name="//api/name/asynGetIpByHost:" title="asynGetIpByHost:"></a>
+	<h3 class="subsubtitle method-title">asynGetIpByHost:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the version of the Bolts Framework as an NSString.</p>
+		<p>OSS SDK专用</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (NSString *)version</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)asynGetIpByHost:(NSString *)<em>host</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>host</em></dt>
+			<dd><p>需要严格遵守domain标准格式，如 oss-cn-hangzhou.aliyuncs.com</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The NSString representation of the current version.</p>
+		<p>解析host得到的ip列表中的某个ip</p>
 	</div>
 	
 	
@@ -172,7 +196,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the version of the Bolts Framework as an NSString.</p>
+		<p>OSS SDK专用</p>
 	</div>
 	
 	
@@ -183,15 +207,63 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OSSBolts.h</code><br />
+		<code class="declared-in-ref">OSSHttpdns.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resolveHost:" title="resolveHost:"></a>
+	<h3 class="subsubtitle method-title">resolveHost:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>发起对一个host的解析，异步执行</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resolveHost:(NSString *)<em>host</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li><p>发起对一个host的解析，异步执行</p></li>
+<li><p>如果该host已经在解析中，那么后续的请求都会被放弃，直到它解析完成
+*</p></li>
+<li>@param host 需要解析的ip</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSHttpdns.m</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
-					
-					
 					
 					
                     
@@ -209,7 +281,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 aliyun. All rights reserved. (Last updated: 2016-01-12)</span><br />
+						<p><span class="copyright">&copy; 2016 aliyun. All rights reserved. (Last updated: 2016-05-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</span></p>
 						

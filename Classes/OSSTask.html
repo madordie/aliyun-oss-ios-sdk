@@ -62,6 +62,8 @@
 	
 	<option value="//api/name/taskForCompletionOfAllTasksWithResults:">&nbsp;&nbsp;&nbsp;&nbsp;+ taskForCompletionOfAllTasksWithResults:</option>
 	
+	<option value="//api/name/taskForCompletionOfAnyTask:">&nbsp;&nbsp;&nbsp;&nbsp;+ taskForCompletionOfAnyTask:</option>
+	
 	<option value="//api/name/taskFromExecutor:withBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ taskFromExecutor:withBlock:</option>
 	
 	<option value="//api/name/taskWithDelay:">&nbsp;&nbsp;&nbsp;&nbsp;+ taskWithDelay:</option>
@@ -145,6 +147,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/taskForCompletionOfAllTasksWithResults:">taskForCompletionOfAllTasksWithResults:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/taskForCompletionOfAnyTask:">taskForCompletionOfAnyTask:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/taskFromExecutor:withBlock:">taskFromExecutor:withBlock:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/taskWithDelay:">taskWithDelay:</a></span></li>
@@ -204,6 +208,9 @@
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">ResultType<br />__covariant</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">OSSTask.h<br />OSSTask.m</td>
 </tr>
@@ -266,6 +273,12 @@ be run once the task is complete.</p>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/taskForCompletionOfAllTasksWithResults:">+&nbsp;taskForCompletionOfAllTasksWithResults:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/taskForCompletionOfAnyTask:">+&nbsp;taskForCompletionOfAnyTask:</a></code>
 	</span>
 	
 	
@@ -484,7 +497,7 @@ be run once the task is complete.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSError *error</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSError *error</code></div>
 
     
 	
@@ -525,7 +538,7 @@ be run once the task is complete.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSException *exception</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) NSException *exception</code></div>
 
     
 	
@@ -607,7 +620,7 @@ be run once the task is complete.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) OSSGenericType result</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong, readonly) ResultType result</code></div>
 
     
 	
@@ -698,7 +711,7 @@ all of the input tasks have <a href="#//api/name/completed">completed</a>.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasks:(NSArray *)<em>tasks</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasks:(nullable NSArray&lt;OSSTask*&gt; *)<em>tasks</em></code></div>
 
     
 	
@@ -752,7 +765,7 @@ an <code>NSArray</code> of all task results in the order they were provided.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasksWithResults:(NSArray *)<em>tasks</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAllTasksWithResults:(nullable NSArray&lt;OSSTask*&gt; *)<em>tasks</em></code></div>
 
     
 	
@@ -794,6 +807,61 @@ an <code>NSArray</code> of all task results in the order they were provided.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/taskForCompletionOfAnyTask:" title="taskForCompletionOfAnyTask:"></a>
+	<h3 class="subsubtitle method-title">taskForCompletionOfAnyTask:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once there is at least one successful task.
+The first task to successuly complete will set the <a href="#//api/name/result">result</a>, all other tasks results are
+ignored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskForCompletionOfAnyTask:(nullable NSArray&lt;OSSTask*&gt; *)<em>tasks</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tasks</em></dt>
+			<dd><p>An <code>NSArray</code> of the tasks to use as an input.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a task that will be <a href="#//api/name/completed">completed</a> once there is at least one successful task.
+The first task to successuly complete will set the <a href="#//api/name/result">result</a>, all other tasks results are
+ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSTask.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/taskFromExecutor:withBlock:" title="taskFromExecutor:withBlock:"></a>
 	<h3 class="subsubtitle method-title">taskFromExecutor:withBlock:</h3>
 	
@@ -806,7 +874,7 @@ the specified executor.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)taskFromExecutor:(OSSExecutor *)<em>executor</em> withBlock:(id ( ^ ) ( ))<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskFromExecutor:(OSSExecutor *)<em>executor</em> withBlock:(nullable id ( ^ ) ( ))<em>block</em></code></div>
 
     
 	
@@ -923,7 +991,7 @@ task will be finished (with <a href="#//api/name/result">result</a> == nil).</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithDelay:(int)<em>millis</em> cancellationToken:(OSSCancellationToken *)<em>token</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithDelay:(int)<em>millis</em> cancellationToken:(nullable OSSCancellationToken *)<em>token</em></code></div>
 
     
 	
@@ -1082,7 +1150,7 @@ task will be finished (with <a href="#//api/name/result">result</a> == nil).</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithResult:(OSSGenericType)<em>result</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)taskWithResult:(nullable ResultType)<em>result</em></code></div>
 
     
 	
@@ -1145,7 +1213,7 @@ dispatch queue with default priority.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithBlock:(OSSContinuationBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithBlock:(OSSContinuationBlock)<em>block</em></code></div>
 
     
 	
@@ -1211,7 +1279,7 @@ dispatch queue with default priority.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(OSSCancellationToken *)<em>cancellationToken</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(nullable OSSCancellationToken *)<em>cancellationToken</em></code></div>
 
     
 	
@@ -1278,7 +1346,7 @@ dispatch queue with default priority.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithExecutor:(OSSExecutor *)<em>executor</em> block:(OSSContinuationBlock)<em>block</em> cancellationToken:(OSSCancellationToken *)<em>cancellationToken</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithExecutor:(OSSExecutor *)<em>executor</em> block:(OSSContinuationBlock)<em>block</em> cancellationToken:(nullable OSSCancellationToken *)<em>cancellationToken</em></code></div>
 
     
 	
@@ -1350,7 +1418,7 @@ returned task.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithExecutor:(OSSExecutor *)<em>executor</em> successBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(OSSCancellationToken *)<em>cancellationToken</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithExecutor:(OSSExecutor *)<em>executor</em> successBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(nullable OSSCancellationToken *)<em>cancellationToken</em></code></div>
 
     
 	
@@ -1422,7 +1490,7 @@ returned task.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithExecutor:(OSSExecutor *)<em>executor</em> withBlock:(OSSContinuationBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithExecutor:(OSSExecutor *)<em>executor</em> withBlock:(OSSContinuationBlock)<em>block</em></code></div>
 
     
 	
@@ -1489,7 +1557,7 @@ returned task.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithExecutor:(OSSExecutor *)<em>executor</em> withSuccessBlock:(OSSContinuationBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithExecutor:(OSSExecutor *)<em>executor</em> withSuccessBlock:(OSSContinuationBlock)<em>block</em></code></div>
 
     
 	
@@ -1559,7 +1627,7 @@ task.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithSuccessBlock:(OSSContinuationBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithSuccessBlock:(OSSContinuationBlock)<em>block</em></code></div>
 
     
 	
@@ -1623,7 +1691,7 @@ task.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)continueWithSuccessBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(OSSCancellationToken *)<em>cancellationToken</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (OSSTask *)continueWithSuccessBlock:(OSSContinuationBlock)<em>block</em> cancellationToken:(nullable OSSCancellationToken *)<em>cancellationToken</em></code></div>
 
     
 	
@@ -1742,7 +1810,7 @@ message if it is used on the main thread.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 aliyun. All rights reserved. (Last updated: 2016-01-12)</span><br />
+						<p><span class="copyright">&copy; 2016 aliyun. All rights reserved. (Last updated: 2016-05-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</span></p>
 						
