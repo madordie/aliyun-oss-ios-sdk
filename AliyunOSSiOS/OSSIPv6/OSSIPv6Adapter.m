@@ -4,9 +4,14 @@
 //  Created by lingkun on 16/5/16.
 //  Copyright © 2016年 Ali. All rights reserved.
 //
+#if TARGET_OS_IOS
+    #import <UIKit/UIKit.h>
+    #define UIApplicationDidBecomeActiveNotification UIApplicationDidBecomeActiveNotification
+#else
+    #define UIApplicationDidBecomeActiveNotification NSApplicationDidBecomeActiveNotification
+#endif
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "OSSIPv6Adapter.h"
 #import "OSSIPv6PrefixResolver.h"
 #import "OSSReachabilityManager.h"

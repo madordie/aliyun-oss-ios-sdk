@@ -6,7 +6,10 @@
 //  Copyright (c) 2015 aliyun.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#if TARGET_OS_IOS
+    #import <UIKit/UIKit.h>
+#endif
+
 #import "OSSDefine.h"
 #import "OSSModel.h"
 #import "OSSBolts.h"
@@ -423,9 +426,15 @@ NSString * const BACKGROUND_SESSION_IDENTIFIER = @"com.aliyun.oss.backgroundsess
     static NSString * _userAgent = nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-        NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
-        NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
+        #if TARGET_OS_IOS
+            NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+            NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+            NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
+        #else
+            NSString *systemName = NSUserName();
+            NSString *systemVersion = [[NSProcessInfo processInfo] operatingSystemVersionString];
+            NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
+        #endif
         _userAgent = [NSString stringWithFormat:@"%@/%@/%@/%@/%@", OSSUAPrefix, OSSSDKVersion, systemName, systemVersion, localeIdentifier];
     });
     return _userAgent;

@@ -6,7 +6,10 @@
 //  Copyright (c) 2015 aliyun.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#if TARGET_OS_IOS
+    #import <UIKit/UIKit.h>
+#endif
+
 #import "OSSDefine.h"
 #import "OSSNetworking.h"
 #import "OSSBolts.h"
@@ -296,11 +299,15 @@
         NSURLSessionConfiguration * uploadSessionConfig = nil;
 
         if (configuration.enableBackgroundTransmitService) {
-            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+            #if TARGET_OS_IOS
+                if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+                    uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.configuration.backgroundSessionIdentifier];
+                } else {
+                    uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfiguration:self.configuration.backgroundSessionIdentifier];
+                }
+            #else
                 uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.configuration.backgroundSessionIdentifier];
-            } else {
-                uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfiguration:self.configuration.backgroundSessionIdentifier];
-            }
+            #endif
         } else {
             uploadSessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         }
@@ -390,10 +397,13 @@
         return [requestDelegate buildInternalHttpRequest];
     }] continueWithSuccessBlock:^id(OSSTask *task) {
         NSURLSessionDataTask * sessionTask = nil;
-        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 && self.configuration.timeoutIntervalForRequest > 0) {
+        #if TARGET_OS_IOS
+            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 && self.configuration.timeoutIntervalForRequest > 0) {
+                requestDelegate.internalRequest.timeoutInterval = self.configuration.timeoutIntervalForRequest;
+            }
+        #else
             requestDelegate.internalRequest.timeoutInterval = self.configuration.timeoutIntervalForRequest;
-        }
-
+        #endif
         if (requestDelegate.uploadingData) {
             [requestDelegate.internalRequest setHTTPBody:requestDelegate.uploadingData];
             sessionTask = [_dataSession dataTaskWithRequest:requestDelegate.internalRequest];
